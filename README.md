@@ -19,7 +19,7 @@ The script generates two primary output files:
 - **gps_map.html**: An interactive map. You can zoom, pan, and click on marker clusters to explore the data points.
 - **gps_map_screenshot_... .png**: A static image of the map, perfect for embedding in reports, presentations, or sharing.
 
-![alt text](gps_map_screenshot_20231027_103000.png)
+![alt text](https://github.com/Sharan-Kumar-R/GPS-Map-Visualizer/blob/main/Map_Plotted.png)
 
 *(Note: Replace the image above with a generated screenshot from the script for a live preview in your repository.)*
 
