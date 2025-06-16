@@ -5,13 +5,11 @@ This project provides a Python script that reads GPS coordinates from a CSV file
 
 ## Features
 
-- **CSV Data Input**: Reads latitude and longitude data from a cities.csv file.
+- **CSV Data Input**: Reads latitude and longitude data from a CSV file.
 - **Data Cleaning**: Automatically handles non-numeric values, drops entries with missing coordinates, and removes duplicate points.
 - **Interactive Map Generation**: Creates a beautiful, interactive map using Folium with clustered markers for better readability when dealing with many points.
 - **Auto-fit Bounds**: The map automatically zooms and centers to fit all plotted data points.
 - **Automated Screenshot**: Uses a headless Chrome browser via Selenium to capture a high-resolution screenshot of the map.
-- **Dynamic File Naming**: Screenshots are saved with a timestamp to avoid overwriting previous captures.
-- **Cross-Platform**: Opens the generated HTML map in your default web browser for immediate viewing.
 
 ## Demo / Output
 
