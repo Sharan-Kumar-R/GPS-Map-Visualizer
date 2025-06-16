@@ -136,8 +136,6 @@ WINDOW_HEIGHT = 800
 - HTML_MAP_PATH: Path where the HTML map will be saved.
 - WINDOW_WIDTH / WINDOW_HEIGHT: Dimensions of the screenshot image in pixels.
 
-
-
 ## Contributing
 
 1. Fork the repository
@@ -146,7 +144,7 @@ WINDOW_HEIGHT = 800
 4. Add tests if applicable
 5. Submit a pull request
 
-In case of any Queries kindly leave a text or put mail given in my profile.
+In case of any queries, please leave a message or contact me via the email provided in my profile.
 
 <p align="center">
 ⭐ <strong>Star this repository if you found it helpful!</strong>
