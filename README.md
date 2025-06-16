@@ -89,7 +89,7 @@ DevTools listening on ws://127.0.0.1:58090/devtools/browser/1bf5a2e-80c8-4329-a3
 ## Project Structure
 
 ```
-.
+gps-map-visualizer/
 ├── GPS.py                      # The main Python script
 ├── cities.csv                  # Input data file with GPS coordinates
 ├── gps_map.html                # Output: Generated interactive map
