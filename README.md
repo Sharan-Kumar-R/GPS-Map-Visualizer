@@ -96,7 +96,24 @@ gps-map-visualizer/
 ├── gps_map_screenshot_... .png # Output: Generated map screenshot
 └── README.md                   # This file
 ```
+## Configuration
 
+You can easily modify the script's behavior by changing the configuration variables at the top of the `GPS.py` file.
+
+```python
+# --- Configuration ---
+BASE_DIR = Path(__file__).resolve().parent
+CSV_PATH = BASE_DIR / "cities.csv"
+HTML_MAP_PATH = BASE_DIR / "gps_map.html"
+SCREENSHOT_PATH = BASE_DIR / f"gps_map_screenshot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+WINDOW_WIDTH = 1500
+WINDOW_HEIGHT = 800
+```
+
+- **CSV_PATH**: Path to your input data file.
+- **HTML_MAP_PATH**: Path where the HTML map will be saved.
+- **WINDOW_WIDTH / WINDOW_HEIGHT**: Dimensions of the screenshot image in pixels.
+  
 ## Contributing
 
 1. Fork the repository
@@ -105,7 +122,7 @@ gps-map-visualizer/
 4. Add tests if applicable
 5. Submit a pull request
 
-Incase of any Queries kindly leave a text or put mail given in my profile.
+In case of any Queries kindly leave a text or put mail given in my profile.
 
 <p align="center">
 ⭐ <strong>Star this repository if you found it helpful!</strong>
