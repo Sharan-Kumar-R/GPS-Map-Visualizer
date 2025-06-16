@@ -22,6 +22,18 @@ The script generates two primary output files:
 
 ![alt text](https://github.com/Sharan-Kumar-R/GPS-Map-Visualizer/blob/main/Map_Plotted.png)
 
+### Console Output Example
+When you run the script, you'll see output similar to this:
+
+```
+📂 Reading CSV from: C:\Users\shana\OneDrive\Desktop\GitHub\cities.csv
+✅ 147209 unique valid points processed.
+✅ Map saved to: C:\Users\shana\OneDrive\Desktop\GitHub\gps_map.html
+📸 Capturing map screenshot...
+DevTools listening on ws://127.0.0.1:58090/devtools/browser/1bf5a2e-80c8-4329-a3ed-0f1ee550916a
+✅ Screenshot saved to: C:\Users\shana\OneDrive\Desktop\GitHub\gps_map_screenshot_20250616_210420.png
+✅ Browser closed.
+```
 
 ## Prerequisites
 
