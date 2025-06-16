@@ -86,6 +86,28 @@ DevTools listening on ws://127.0.0.1:58090/devtools/browser/1bf5a2e-80c8-4329-a3
 - Upon completion, you will find `gps_map.html` and `gps_map_screenshot_... .png` in the project directory.
 - The interactive map (`gps_map.html`) will automatically open in your default web browser.
 
+## Troubleshooting
+
+### Common Issues
+
+**ChromeDriver not found**
+```
+selenium.common.exceptions.WebDriverException: 'chromedriver' executable needs to be in PATH
+```
+**Solution**: Download ChromeDriver and add to your system PATH or place in project directory.
+
+**CSV reading errors**
+```
+❌ Error reading CSV: [Errno 2] No such file or directory: 'cities.csv'
+```
+**Solution**: Ensure `cities.csv` exists in the project directory with proper formatting.
+
+**No valid GPS data**
+```
+⚠ No valid GPS data points found.
+```
+**Solution**: Check your CSV format and ensure coordinates are valid numbers (latitude: -90 to 90, longitude: -180 to 180).
+
 ## Project Structure
 
 ```
@@ -114,27 +136,7 @@ WINDOW_HEIGHT = 800
 - HTML_MAP_PATh: Path where the HTML map will be saved.
 - WINDOW_WIDTH / WINDOW_HEIGHT: Dimensions of the screenshot image in pixels.
 
-## Troubleshooting
 
-### Common Issues
-
-**ChromeDriver not found**
-```
-selenium.common.exceptions.WebDriverException: 'chromedriver' executable needs to be in PATH
-```
-**Solution**: Download ChromeDriver and add to your system PATH or place in project directory.
-
-**CSV reading errors**
-```
-❌ Error reading CSV: [Errno 2] No such file or directory: 'cities.csv'
-```
-**Solution**: Ensure `cities.csv` exists in the project directory with proper formatting.
-
-**No valid GPS data**
-```
-⚠ No valid GPS data points found.
-```
-**Solution**: Check your CSV format and ensure coordinates are valid numbers (latitude: -90 to 90, longitude: -180 to 180).
 
 ## Contributing
 
