@@ -37,8 +37,8 @@ After downloading, ensure `chromedriver.exe` (or `chromedriver` on Linux/macOS) 
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
-cd your-repository-name
+git clone https://github.com/Sharan-Kumar-R/GPS-Map-Visualizer.git
+cd GPS-Map-Visualizer
 ```
 
 2. **Install the required Python packages**:
