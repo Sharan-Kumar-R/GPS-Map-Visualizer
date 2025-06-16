@@ -53,10 +53,11 @@ The CSV file must contain at least the following columns: `latitude`, `longitude
 
 **Example cities.csv format**:
 ```csv
-city,state_name,country_name,latitude,longitude
-New York,New York,United States,40.7128,-74.0060
-Los Angeles,California,United States,34.0522,-118.2437
-Paris,Île-de-France,France,48.8566,2.3522
+id,name,state_id,state_code,state_name,country_id,country_code,country_name,latitude,longitude,wikiDataId
+52,Ashkasham,3901,BDS,Badakhshan,1,AF,Afghanistan,36.68333000,71.53333000,Q4805192
+68,Fayzabad,3901,BDS,Badakhshan,1,AF,Afghanistan,37.11660000,70.58002000,Q156558
+78,Jurm,3901,BDS,Badakhshan,1,AF,Afghanistan,36.86477000,70.83421000,Q10308323
+84,Khandud,3901,BDS,Badakhshan,1,AF,Afghanistan,36.95127000,72.31800000,Q3290334
 ```
 
 ### Run the script:
