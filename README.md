@@ -26,7 +26,7 @@ Before running the script, you need to have Python and the following packages in
 
 - **Python 3.6+**
 - **pip** (Python package installer)
-- **ChromeDriver**: The script uses Selenium to control a Chrome browser. You must download the [ChromeDriver](https://chromedriver.chromium.org/) that matches your installed Chrome browser version. 
+- **ChromeDriver**: The script uses Selenium to control a Chrome browser. You must download the ChromeDriver that matches your installed Chrome browser version. 
 
 After downloading, ensure `chromedriver.exe` (or `chromedriver` on Linux/macOS) is in your system's PATH.
 
