@@ -21,7 +21,6 @@ The script generates two primary output files:
 
 ![alt text](https://github.com/Sharan-Kumar-R/GPS-Map-Visualizer/blob/main/Map_Plotted.png)
 
-*(Note: Replace the image above with a generated screenshot from the script for a live preview in your repository.)*
 
 ## Prerequisites
 
