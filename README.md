@@ -113,7 +113,29 @@ WINDOW_HEIGHT = 800
 - CSV_PATH: Path to your input data file.
 - HTML_MAP_PATh: Path where the HTML map will be saved.
 - WINDOW_WIDTH / WINDOW_HEIGHT: Dimensions of the screenshot image in pixels.
-  
+
+## Troubleshooting
+
+### Common Issues
+
+**ChromeDriver not found**
+```
+selenium.common.exceptions.WebDriverException: 'chromedriver' executable needs to be in PATH
+```
+**Solution**: Download ChromeDriver and add to your system PATH or place in project directory.
+
+**CSV reading errors**
+```
+❌ Error reading CSV: [Errno 2] No such file or directory: 'cities.csv'
+```
+**Solution**: Ensure `cities.csv` exists in the project directory with proper formatting.
+
+**No valid GPS data**
+```
+⚠ No valid GPS data points found.
+```
+**Solution**: Check your CSV format and ensure coordinates are valid numbers (latitude: -90 to 90, longitude: -180 to 180).
+
 ## Contributing
 
 1. Fork the repository
