@@ -133,7 +133,7 @@ WINDOW_HEIGHT = 800
 ```
 
 - CSV_PATH: Path to your input data file.
-- HTML_MAP_PATh: Path where the HTML map will be saved.
+- HTML_MAP_PATH: Path where the HTML map will be saved.
 - WINDOW_WIDTH / WINDOW_HEIGHT: Dimensions of the screenshot image in pixels.
 
 
