@@ -13,6 +13,15 @@ This project provides a Python script that reads GPS coordinates from a CSV file
 - **Dynamic File Naming**: Screenshots are saved with a timestamp to avoid overwriting previous captures.
 - **Cross-Platform**: Opens the generated HTML map in your default web browser for immediate viewing.
 
+## Demo / Output
+
+The script generates two primary output files:
+
+- **gps_map.html**: An interactive map. You can zoom, pan, and click on marker clusters to explore the data points.
+- **gps_map_screenshot_... .png**: A static image of the map, perfect for embedding in reports, presentations, or sharing.
+
+![alt text](https://github.com/Sharan-Kumar-R/GPS-Map-Visualizer/blob/main/Map_Plotted.png)
+
 ## Prerequisites
 
 Before running the script, you need to have Python and the following packages installed.
@@ -58,15 +67,6 @@ Open your terminal or command prompt, navigate to the project directory, and exe
 ```bash
 python GPS.py
 ```
-
-## Demo / Output
-
-The script generates two primary output files:
-
-- **gps_map.html**: An interactive map. You can zoom, pan, and click on marker clusters to explore the data points.
-- **gps_map_screenshot_... .png**: A static image of the map, perfect for embedding in reports, presentations, or sharing.
-
-![alt text](https://github.com/Sharan-Kumar-R/GPS-Map-Visualizer/blob/main/Map_Plotted.png)
 
 ### Console Output Example
 When you run the script, you'll see output similar to this:
