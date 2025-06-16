@@ -76,6 +76,7 @@ When you run the script, you'll see output similar to this:
 ✅ 147209 unique valid points processed.
 ✅ Map saved to: C:\Users\shana\OneDrive\Desktop\GitHub\gps_map.html
 📸 Capturing map screenshot...
+
 DevTools listening on ws://127.0.0.1:58090/devtools/browser/1bf5a2e-80c8-4329-a3ed-0f1ee550916a
 ✅ Screenshot saved to: C:\Users\shana\OneDrive\Desktop\GitHub\gps_map_screenshot_20250616_210420.png
 ✅ Browser closed.
@@ -104,6 +105,8 @@ gps-map-visualizer/
 3. Make your changes
 4. Add tests if applicable
 5. Submit a pull request
+
+Incase of any Queries kindly leave a text or put mail given in my profile.
 
 <p align="center">
 ⭐ <strong>Star this repository if you found it helpful!</strong>
