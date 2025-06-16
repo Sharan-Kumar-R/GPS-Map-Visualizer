@@ -31,7 +31,7 @@ Before running the script, you need to have Python and the following packages in
 - **pip** (Python package installer)
 - **ChromeDriver**: The script uses Selenium to control a Chrome browser. You must download the ChromeDriver that matches your installed Chrome browser version. [Download ChromeDriver Here](https://chromedriver.chromium.org/)
 
-After downloading, ensure `chromedriver.exe` (or `chromedriver` on Linux/macOS) is in your system's PATH, or place it in the same directory as the `GPS.py` script.
+After downloading, ensure `chromedriver.exe` (or `chromedriver` on Linux/macOS) is in your system's PATH.
 
 ## Installation
 
