@@ -42,6 +42,8 @@ pip install pandas folium selenium
 Ensure you have a CSV file named `cities.csv` in the same directory as the script.
 The CSV file must contain at least the following columns: `latitude`, `longitude`, `state_name`, and `country_name`.
 
+**Dataset Source**: This project works great with the [Geolocation Dataset from Kaggle](https://www.kaggle.com/datasets/liewyousheng/geolocation?resource=download) which contains comprehensive GPS coordinates for cities worldwide.
+
 **Example cities.csv format**:
 ```csv
 city,state_name,country_name,latitude,longitude
