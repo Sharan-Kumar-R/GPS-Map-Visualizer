@@ -29,9 +29,7 @@ Before running the script, you need to have Python and the following packages in
 
 - **Python 3.6+**
 - **pip** (Python package installer)
-- **ChromeDriver**: The script uses Selenium to control a Chrome browser. You must download the ChromeDriver that matches your installed Chrome browser version.
-
-[Download ChromeDriver Here](https://chromedriver.chromium.org/)
+- **ChromeDriver**: The script uses Selenium to control a Chrome browser. You must download the ChromeDriver that matches your installed Chrome browser version. [Download ChromeDriver Here](https://chromedriver.chromium.org/)
 
 After downloading, ensure `chromedriver.exe` (or `chromedriver` on Linux/macOS) is in your system's PATH, or place it in the same directory as the `GPS.py` script.
 
@@ -43,18 +41,7 @@ git clone https://github.com/your-username/your-repository-name.git
 cd your-repository-name
 ```
 
-2. **Create and activate a virtual environment** (recommended):
-```bash
-# For Windows
-python -m venv venv
-.\venv\Scripts\activate
-
-# For macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-```
-
-3. **Install the required Python packages**:
+2. **Install the required Python packages**:
 ```bash
 pip install pandas folium selenium
 ```
@@ -95,50 +82,6 @@ python GPS.py
 ├── gps_map_screenshot_... .png # Output: Generated map screenshot
 └── README.md                   # This file
 ```
-
-## Configuration
-
-You can easily modify the script's behavior by changing the configuration variables at the top of the `GPS.py` file.
-
-```python
-# --- Configuration ---
-BASE_DIR = Path(__file__).resolve().parent
-CSV_PATH = BASE_DIR / "cities.csv"
-HTML_MAP_PATH = BASE_DIR / "gps_map.html"
-SCREENSHOT_PATH = BASE_DIR / f"gps_map_screenshot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
-WINDOW_WIDTH = 1500
-WINDOW_HEIGHT = 800
-```
-
-- **CSV_PATH**: Path to your input data file.
-- **HTML_MAP_PATH**: Path where the HTML map will be saved.
-- **WINDOW_WIDTH / WINDOW_HEIGHT**: Dimensions of the screenshot image in pixels.
-
-## Troubleshooting
-
-### Common Issues
-
-**ChromeDriver not found**
-```
-selenium.common.exceptions.WebDriverException: 'chromedriver' executable needs to be in PATH
-```
-**Solution**: Download ChromeDriver and add to your system PATH or place in project directory.
-
-**CSV reading errors**
-```
-❌ Error reading CSV: [Errno 2] No such file or directory: 'cities.csv'
-```
-**Solution**: Ensure `cities.csv` exists in the project directory with proper formatting.
-
-**No valid GPS data**
-```
-⚠ No valid GPS data points found.
-```
-**Solution**: Check your CSV format and ensure coordinates are valid numbers (latitude: -90 to 90, longitude: -180 to 180).
-
-## License
-
-This project is open source. Feel free to modify and distribute as needed.
 
 ## Contributing
 
