@@ -132,7 +132,7 @@ selenium.common.exceptions.WebDriverException: 'chromedriver' executable needs t
 ## Project Structure
 
 ```
-gps-map-visualizer/
+GPS-Map-Visualizer/
 ├── GPS.py                      # The main Python script
 ├── cities.csv                  # Input data file with GPS coordinates
 ├── gps_map.html                # Output: Generated interactive map
