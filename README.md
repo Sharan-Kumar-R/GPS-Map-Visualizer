@@ -1,6 +1,7 @@
 
 <h1 align="center">GPS Map Visualizer</h1>
 
+<br>
 <p align="center">
   <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
   <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
@@ -8,7 +9,7 @@
   <img src="https://img.shields.io/badge/selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium">
   <img src="https://img.shields.io/badge/chromedriver-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="ChromeDriver">
 </p>
-
+<br>
 
 This project provides a Python script that reads GPS coordinates from a CSV file, plots them on an interactive map, and saves the result as both an interactive HTML file and a static PNG screenshot. It uses pandas for data manipulation, folium for map generation, and selenium for automated screenshot capture.
 
