@@ -42,6 +42,8 @@ After downloading, ensure `chromedriver.exe` (or `chromedriver` on Linux/macOS) 
 
 ## Installation
 
+### Option A: Manual Git Clone
+
 1. **Clone the repository**:
 ```bash
 git clone https://github.com/Sharan-Kumar-R/GPS-Map-Visualizer.git
@@ -52,6 +54,15 @@ cd GPS-Map-Visualizer
 ```bash
 pip install pandas folium selenium
 ```
+
+**Option B: Using VS Code Git Integration**
+1. Open Visual Studio Code
+2. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac)
+3. Type "Git: Clone" and select it
+4. Paste the repository URL: `https://github.com/Sharan-Kumar-R/GPS-Map-Visualizer.git`
+5. Choose a folder location and click "Select Repository Location"
+6. Click "Open" when prompted
+
 
 ## Usage
 
@@ -155,6 +166,8 @@ WINDOW_HEIGHT = 800
 5. Submit a pull request
 
 In case of any queries, please leave a message or contact me via the email provided in my profile.
+
+---
 
 <p align="center">
 ⭐ <strong>Star this repository if you found it helpful!</strong>
