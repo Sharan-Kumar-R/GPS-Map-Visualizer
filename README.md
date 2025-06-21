@@ -8,7 +8,6 @@
   <img src="https://img.shields.io/badge/selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium">
   <img src="https://img.shields.io/badge/chromedriver-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="ChromeDriver">
 </p>
-<br>
 
 ## Overview
 
