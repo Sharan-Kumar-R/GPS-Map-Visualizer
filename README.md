@@ -138,7 +138,7 @@ GPS-Map-Visualizer/
 ├── GPS.py                      # The main Python script
 ├── cities.csv                  # Input data file with GPS coordinates
 ├── gps_map.html                # Output: Generated interactive map
-├── gps_map_screenshot_... .png # Output: Generated map screenshot
+├── Map_Plotted.png             # Output: Generated map screenshot
 └── README.md                   # This file
 ```
 
