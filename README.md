@@ -1,4 +1,3 @@
-
 <h1 align="center">GPS Map Visualizer</h1>
 
 <br>
@@ -10,6 +9,8 @@
   <img src="https://img.shields.io/badge/chromedriver-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="ChromeDriver">
 </p>
 <br>
+
+## Overview
 
 This project provides a Python script that reads GPS coordinates from a CSV file, plots them on an interactive map, and saves the result as both an interactive HTML file and a static PNG screenshot. It uses pandas for data manipulation, folium for map generation, and selenium for automated screenshot capture.
 
@@ -30,15 +31,13 @@ The script generates two primary output files:
 
 ![alt text](https://github.com/Sharan-Kumar-R/GPS-Map-Visualizer/blob/main/Map_Plotted.png)
 
-## Prerequisites
-
-Before running the script, you need to have Python and the following packages installed.
+## Requirements
 
 - **Python 3.6+**
 - **pip** (Python package installer)
-- **ChromeDriver**: The script uses Selenium to control a Chrome browser. You must download the ChromeDriver that matches your installed Chrome browser version. 
-
-After downloading, ensure `chromedriver.exe` (or `chromedriver` on Linux/macOS) is in your system's PATH.
+- **Google Chrome** browser installed
+- **ChromeDriver**: Must match your installed Chrome browser version
+- **Python packages**: pandas, folium, selenium
 
 ## Installation
 
@@ -55,18 +54,24 @@ cd GPS-Map-Visualizer
 pip install pandas folium selenium
 ```
 
-**Option B: Using VS Code Git Integration**
+3. **Download ChromeDriver**:
+   - Visit [ChromeDriver Downloads](https://chromedriver.chromium.org/)
+   - Download the version matching your Chrome browser
+   - Add `chromedriver.exe` to your system PATH or place in project directory
+
+### Option B: Using VS Code Git Integration
+
 1. Open Visual Studio Code
 2. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac)
 3. Type "Git: Clone" and select it
 4. Paste the repository URL: `https://github.com/Sharan-Kumar-R/GPS-Map-Visualizer.git`
 5. Choose a folder location and click "Select Repository Location"
 6. Click "Open" when prompted
-
+7. Follow steps 2-3 from Option A above
 
 ## Usage
 
-### Prepare your data:
+### 1. Prepare your data:
 Ensure you have a CSV file named `cities.csv` in the same directory as the script.
 The CSV file must contain at least the following columns: `latitude`, `longitude`, `state_name`, and `country_name`.
 
@@ -81,14 +86,14 @@ id,name,state_id,state_code,state_name,country_id,country_code,country_name,lati
 84,Khandud,3901,BDS,Badakhshan,1,AF,Afghanistan,36.95127000,72.31800000,Q3290334
 ```
 
-### Run the script:
+### 2. Run the script:
 Open your terminal or command prompt, navigate to the project directory, and execute the script.
 
 ```bash
 python GPS.py
 ```
 
-### Console Output Example
+### 3. Console Output Example
 When you run the script, you'll see output similar to this:
 
 ```
@@ -102,10 +107,40 @@ DevTools listening on ws://127.0.0.1:58090/devtools/browser/1bf5a2e-80c8-4329-a3
 ✅ Browser closed.
 ```
 
-### Check the output:
+### 4. Check the output:
 - The script will print its progress to the console.
 - Upon completion, you will find `gps_map.html` and `gps_map_screenshot_... .png` in the project directory.
 - The interactive map (`gps_map.html`) will automatically open in your default web browser.
+
+## Configuration
+
+You can easily modify the script's behavior by changing the configuration variables at the top of the `GPS.py` file:
+
+```python
+# --- Configuration ---
+BASE_DIR = Path(__file__).resolve().parent
+CSV_PATH = BASE_DIR / "cities.csv"
+HTML_MAP_PATH = BASE_DIR / "gps_map.html"
+SCREENSHOT_PATH = BASE_DIR / f"gps_map_screenshot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+WINDOW_WIDTH = 1500
+WINDOW_HEIGHT = 800
+```
+
+**Configuration Options:**
+- `CSV_PATH`: Path to your input data file
+- `HTML_MAP_PATH`: Path where the HTML map will be saved
+- `WINDOW_WIDTH` / `WINDOW_HEIGHT`: Screenshot dimensions in pixels
+
+## Project Structure
+
+```
+GPS-Map-Visualizer/
+├── GPS.py                      # The main Python script
+├── cities.csv                  # Input data file with GPS coordinates
+├── gps_map.html                # Output: Generated interactive map
+├── gps_map_screenshot_... .png # Output: Generated map screenshot
+└── README.md                   # This file
+```
 
 ## Troubleshooting
 
@@ -115,7 +150,7 @@ DevTools listening on ws://127.0.0.1:58090/devtools/browser/1bf5a2e-80c8-4329-a3
 ```
 selenium.common.exceptions.WebDriverException: 'chromedriver' executable needs to be in PATH
 ```
-**Solution**: Download ChromeDriver and add to your system PATH or place in project directory.
+**Solution**: Download ChromeDriver matching your Chrome version and add to your system PATH or place in project directory.
 
 **CSV reading errors**
 ```
@@ -128,34 +163,6 @@ selenium.common.exceptions.WebDriverException: 'chromedriver' executable needs t
 ⚠ No valid GPS data points found.
 ```
 **Solution**: Check your CSV format and ensure coordinates are valid numbers (latitude: -90 to 90, longitude: -180 to 180).
-
-## Project Structure
-
-```
-GPS-Map-Visualizer/
-├── GPS.py                      # The main Python script
-├── cities.csv                  # Input data file with GPS coordinates
-├── gps_map.html                # Output: Generated interactive map
-├── gps_map_screenshot_... .png # Output: Generated map screenshot
-└── README.md                   # This file
-```
-## Configuration
-
-You can easily modify the script's behavior by changing the configuration variables at the top of the `GPS.py` file.
-
-```python
-# --- Configuration ---
-BASE_DIR = Path(__file__).resolve().parent
-CSV_PATH = BASE_DIR / "cities.csv"
-HTML_MAP_PATH = BASE_DIR / "gps_map.html"
-SCREENSHOT_PATH = BASE_DIR / f"gps_map_screenshot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
-WINDOW_WIDTH = 1500
-WINDOW_HEIGHT = 800
-```
-
-- CSV_PATH: Path to your input data file.
-- HTML_MAP_PATH: Path where the HTML map will be saved.
-- WINDOW_WIDTH / WINDOW_HEIGHT: Dimensions of the screenshot image in pixels.
 
 ## Contributing
 
