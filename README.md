@@ -11,7 +11,7 @@
 
 ## Overview
 
-This project provides a Python script that reads GPS coordinates from a CSV file,plots them on an interactive map,and saves the result as both an interactive HTML file and a static PNG screenshot.It uses pandas for data manipulation,folium for map generation,and selenium for automated screenshot capture.
+This project provides a Python script that reads GPS coordinates from a CSV file,plots them on an interactive map, and saves the result as both an interactive HTML file and a static PNG screenshot. It uses pandas for data manipulation,folium for map generation,and selenium for automated screenshot capture.
 
 ## Features
 
